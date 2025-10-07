@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0; 
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: black;
+}
+
+.main {
+    background-image: url(images/background.jpg);
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 70vh;
+    position: relative;
+}
+
+.main .box {
+    height: 70vh;
+    width: 100%;
+    opacity: 0.74;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    /* display: flex; */
+
+}
+
+nav {
+    max-width: 60vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 100px;
+
+}
+
+nav img {
+    color: red;
+    width: 114px;
+    position: relative;
+    z-index: 10;
+
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    font-family: "Martel Sans", sans-serif;
+    height: calc(100px-62px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    gap:23px;
+    padding: 0 30px;
+    height: calc(100% - 100px);
+
+}
+.hero> :nth-child(1){
+    font-family: "poppins",sans-serif;
+    font-size: 48px;
+    font-weight: bolder;
+    text-align: center;
+}
+.hero> :nth-child(2){
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+.hero>:nth-child(3){
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.seperation{
+    background-color: rgb(48, 47, 47);
+    height: 7px;
+
+}
+
+.btn{
+    padding: 3px 8px;
+    font-weight: bold;
+    background-color: white;
+
+}
+.btn-red{
+    background-color: red;
+    color: white;
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius:4px;
+}
+.hero button{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    gap:16px;
+}
+
+.main input{
+    padding: 7px 15px 8px 14px;
+    font-weight: 900;
+    font-size: 12px;
+    border-radius:4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 2px solid rgba(23, 23, 23, 0.7);
+}
+.btn-red-sn{
+    background-color:red;
+    color:white;
+}
