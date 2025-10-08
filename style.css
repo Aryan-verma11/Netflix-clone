@@ -2,10 +2,11 @@
 
 * {
     margin: 0;
-    padding: 0; 
+    padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-body{
+
+body {
     background: black;
 }
 
@@ -14,18 +15,18 @@ body{
     background-position: center center;
     background-size: max(1200px, 100vw);
     background-repeat: no-repeat;
-    height: 70vh;
+    height: 644px;
     position: relative;
 }
 
 .main .box {
-    height: 70vh;
+    height: 644px;
     width: 100%;
     opacity: 0.74;
     background-color: black;
     position: absolute;
     top: 0;
-    /* display: flex; */
+    position: absolute;
 
 }
 
@@ -41,7 +42,7 @@ nav {
 
 nav img {
     color: red;
-    width: 114px;
+    width: 130px;
     position: relative;
     z-index: 10;
 
@@ -61,63 +62,122 @@ nav button {
     align-items: center;
     color: white;
     position: relative;
-    gap:23px;
+    gap: 10px;
     padding: 0 30px;
     height: calc(100% - 100px);
 
 }
-.hero> :nth-child(1){
-    font-family: "poppins",sans-serif;
-    font-size: 48px;
+
+.hero> :nth-child(1) {
+    font-family: "poppins", sans-serif;
+    font-size: 35px;
     font-weight: bolder;
     text-align: center;
 }
-.hero> :nth-child(2){
+
+.hero> :nth-child(2) {
     font-size: 24px;
     font-weight: 400;
     text-align: center;
 }
-.hero>:nth-child(3){
+
+.hero>:nth-child(3) {
     font-size: 20px;
     font-weight: 400;
     text-align: center;
 }
 
-.seperation{
+.seperation {
     background-color: rgb(48, 47, 47);
     height: 7px;
+    position: relative;
+    z-index: 20;
 
 }
 
-.btn{
+.btn {
     padding: 3px 8px;
-    font-weight: bold;
-    background-color: white;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(248, 243, 243, 0.281);
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 4px;
 
 }
-.btn-red{
+
+.btn-red {
     background-color: red;
     color: white;
     padding: 3px 24px;
     font-size: 20px;
-    border-radius:4px;
-}
-.hero button{
-    display: flex;
-    align-items:center;
-    justify-content:center;
-    gap:16px;
+    border-radius: 4px;
+    font-weight: 400;
 }
 
-.main input{
-    padding: 7px 15px 8px 14px;
+.btn-red-sn {
+    background-color: red;
+    color: white;
+
+}
+
+.hero button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+}
+
+.main input {
+    padding: 7px 101px 8px 14px;
     font-weight: 900;
+    color: white;
     font-size: 12px;
-    border-radius:4px;
+    border-radius: 4px;
     background-color: rgba(23, 23, 23, 0.7);
     border: 2px solid rgba(23, 23, 23, 0.7);
 }
-.btn-red-sn{
-    background-color:red;
-    color:white;
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.secimg {
+    position: relative;
+}
+
+.secimg img {
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+.secimg video {
+  position: absolute;
+  top: 107px;   
+  right: 65px; 
+  width: 425px;
+  z-index: 100;  
+  border: 2px solid red;
+  border-radius: 4px;
+}
+section.first > div{
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+section.first > div :nth-child(1){
+    font-size: 48px;
+    font-weight: bolder;
+
+}
+section.first > div :nth-child(2){
+    font-size: 24px;
 }
