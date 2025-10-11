@@ -26,7 +26,6 @@ body {
     background-color: black;
     position: absolute;
     top: 0;
-    position: absolute;
 
 }
 
@@ -62,9 +61,8 @@ nav button {
     align-items: center;
     color: white;
     position: relative;
-    gap: 10px;
+    gap: 23px;
     padding: 0 30px;
-    height: calc(100% - 100px);
 
 }
 
@@ -131,7 +129,6 @@ nav button {
 
 .main input {
     padding: 7px 101px 8px 14px;
-    font-weight: 900;
     color: white;
     font-size: 12px;
     border-radius: 4px;
@@ -215,6 +212,7 @@ section.first>div :nth-child(2) {
     max-width: 55vw;
     margin: 10px auto;
     cursor: pointer;
+    font-size: 24px;
 
 }
 
@@ -222,7 +220,7 @@ footer {
     color: white;
     max-width: 60vw;
     margin: auto;
-    padding: 14px;
+    padding: 60px;
 
 }
 
@@ -237,7 +235,7 @@ footer .questions {
 
 }
 
-@media screen and (max-width :1300px) {
+@media screen and (max-width: 1300px) {
     .nav {
         max-width: 90vw;
     }
@@ -269,9 +267,6 @@ footer .questions {
         font-size: 18px;
     }
 
-    .main input {
-        padding: 7px 53px 8px 14px;
-    }
 
     .hero-buttons {
         display: flex;
@@ -284,13 +279,17 @@ footer .questions {
     .faq h2 {
         text-align: center;
         font-size: 48px;
-    }
-}
-@media screen and (max-width: 768px) {
-    .secimg video {
-        width: 100%;
-        top: 0;
-        position: relative;
+
+        footer {
+            max-width: 90vw;
+            padding: 75px 0;
+        }
+
+        .footer-item {
+            align-items: center;
+        }
+
+
     }
 }
 
@@ -299,19 +298,11 @@ footer .questions {
     .footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        color: white;
         gap: 32px;
 
     }
-
-    footer {
-        min-width: 90vw;
-    }
-
-    .footer-item {
-        align-items: center;
-    }
 }
+
 
 .footer a {
     font-size: 14px;
